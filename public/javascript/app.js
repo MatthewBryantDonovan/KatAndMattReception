@@ -83,7 +83,9 @@ $("#submit-form").on("click", function () {
         $("#error-msg").append($("<p>").html("Please send me an email or text if this is an error!"));
         return;
       }
-      $("#error-msg").append($("<p>").html("Your information has been sent!"));
+      $("#success-msg").append($("<p>").html("Your information has been sent!"));
+      $("#submit-form").hide();
+      $("#only-form").hide();
     }).catch(function (err){
       console.log(err);
     });
