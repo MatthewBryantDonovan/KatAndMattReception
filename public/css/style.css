@@ -103,6 +103,10 @@ img {
 
 #success-msg {
     font-size: 3em;
+    font-family: 'Bad Script', cursive;
+    font-weight: bolder;
+    color: #00796b;
+    text-shadow: 1px 1px #00cfb7;
 }
 
 @media only screen and (max-width: 450px) {
