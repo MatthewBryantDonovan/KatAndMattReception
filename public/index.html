@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Materialize Icons, Materialize, Slick.js, Slick.js Theme, custom CSS, Google Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Girassol|Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Satisfy&display=swap" rel="stylesheet">
+    <title>Kat and Matt's Reception</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper teal darken-2">
+            <a href="#" class="brand-logo grey-text text-lighten-3 hide-on-small-only center" style="font-size: 2.4em">Kat and Matt
+                Reception</a>
+            <a href="#" id="logosmall" class="brand-logo grey-text text-lighten-3 hide-on-med-and-up left" style="font-size: 1.7em">Kat and Matt
+                Receiption</a>
+            <ul class="right">
+                <li><a id="contact-matt" href="#modal1" class="grey-text text-lighten-3 modal-trigger" style="font-size: 6m">Contact
+                        Matt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col l8">
+            <div class="carouselSlick clearfix">
+                <div class="active car">
+                    <img data-lazy="./images/m1.jpg" data-slide="" class="car-img center m1" alt="Kat and Matt pic 1"
+                        dataslide="m1">
+                </div>
+                <div class="car">
+                    <img data-lazy="./images/m2.jpg" data-slide="" class="car-img center m2" alt="Kat and Matt pic 2"
+                        dataslide="m2">
+                </div>
+                <div class="car">
+                    <img data-lazy="./images/m3.jpg" data-slide="" class="car-img center m3" alt="Kat and Matt pic 3"
+                        dataslide="m3">
+                </div>
+                <div class="car">
+                    <img data-lazy="./images/m4.jpg" data-slide="" class="car-img center m4" alt="Kat and Matt pic 4"
+                        dataslide="m4">
+                </div>
+            </div>
+        </div>
+        <div class="col l4">
+            <p> Who: Kat and Matt</p>
+            <p> What: A Wedding Reception Party</p>
+            <p> Where: Raskin Dance Studio </p>
+            <p> &ensp;&ensp;&ensp;&ensp;&ensp; 2131 Partin Settlement Road, </p>
+            <p> &ensp;&ensp;&ensp;&ensp;&ensp; Kissimmee, Florida <sup>34744</sup></p>
+            <p> When: April 18<sup>th</sup> at 4:00 PM</p>
+            <p> Why: Let's celebrate family and love! </p>
+        </div>
+
+    </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col m12">
+                <h2> ** Please RSVP below, even if you can't make it! **</h2>
+            </div>
+            <form action="#">
+                <div class="col m12">
+                    <span>
+                        <label>
+                            <input name="group1" type="radio" onclick="hideAmt()" value="1" checked required />
+                            <span style="font-size: 2em">Attending by myself</span>
+                        </label>
+                    </span>
+                    <span> &emsp;&emsp;</span>
+                    <span>
+                        <label>
+                            <input name="group1" type="radio" onclick="hideAmt()" value="2" required />
+                            <span style="font-size: 2em">Attending with my significant other</span>
+                        </label>
+                    </span>
+                </div>
+                <div class="col m12">
+                    <span>
+                        <label>
+                            <input id="multi-guest" class="with-gap" name="group1" value="-1" type="radio"
+                                onclick="showAmt()" required />
+                            <span style="font-size: 2em">Attending with my family</span>
+                        </label>
+                    </span>
+                    <span> &#8239; </span>
+                    <span>
+                        <label>
+                            <input class="with-gap" name="group1" type="radio" onclick="hideAmt()" value="0" required />
+                            <span style="font-size: 2em"> Not attending</span>
+                        </label>
+                    </span>
+                </div>
+                <div class="col m12">
+                    <div class="input-field">
+                        <input placeholder="Name entry" id="guest-name" type="text" class="validate" required>
+                        <label class="" for="first_name2">Name</label>
+                    </div>
+                </div>
+                <div class="col m12">
+                    <div class="input-field">
+                        <input placeholder="Example: 5" id="guest-amount" type="number" class="validate">
+                        <label class="guest-amount" for="first_name2">How many people will be attending including
+                            yourself?</label>
+                    </div>
+                </div>
+                <div class="col m12">
+                    <div class="input-field">
+                        <textarea value="SADFASDFASDFASDFASDF" id="guest-comment" type="text"
+                            class="validate"></textarea>
+                        <label class="" for="first_name2">Comment / Note</label>
+                    </div>
+                </div>
+        </div>
+        <div id="error-msg"></div>
+        <button id="submit-form" class="btn" type="button"> Submit </button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </form>
+    </div>
+    </div>
+    </div>
+    </form>
+    </div>
+    </div>
+
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content teal accent-4 center-align">
+            <p class="grey-text text-darken-3 email-text">Please feel free to send me an email if you have any questions
+                regarding
+                the reception!</p>
+            <a href="mailto:MatthewBryantDonovan@gmail.com" id="contactMeBTN"
+                class="teal darken-2 grey-text text-lighten-3 modal-close waves-effect waves-green btn-flat btn"><i
+                    class="large material-icons">email</i> Click to Email</a>
+            <br><br><br>
+            <a href="#!"
+                class="modal-close waves-effect waves-green btn-flat teal darken-2 grey-text text-lighten-3 btn">Close</a>
+        </div>
+    </div>
+
+    <!-- jQuery, Materialize, Slick, Custom JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js">
+    </script>
+    <script src="./javascript/app.js"></script>
+</body>
+
+</html>

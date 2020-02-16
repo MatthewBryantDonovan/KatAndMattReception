@@ -1,0 +1,120 @@
+/* body {
+    background: url(../images/hotel-wallpaper.png);
+}
+
+body {
+    background: url(../images/morocco.png);
+}
+body {
+    background: url(../images/diamonds_@2X.png);
+}
+ */
+
+/*  font-family: 'Dancing Script', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Great Vibes', cursive; */
+body {
+    background: url(../images/xv.png);
+}
+
+a{
+    font-family: 'Great Vibes', cursive;
+}
+
+#contact-matt{
+    font-family:'Bad Script', cursive;
+}
+
+p, h2 {
+    font-size: xx-large;
+    font-family: 'Bad Script', cursive;
+    font-weight: bolder;
+    color: #00796b;
+    text-shadow: 1px 1px #00cfb7;
+}
+
+span{
+    font-size: xx-large;
+    font-family: 'Bad Script', cursive;
+    font-weight: bolder;
+    color: #00796b;
+    text-shadow: 1px 1px #00cfb7;
+}
+
+.radioSize{
+    font-size: 12em;
+}
+
+.slick-arrow:before, .slick-arrow:after, .slick-arrow:focus, .slick-arrow:hover, .slick-arrow  {
+    width: 50px;
+    height: 50px;
+    background: #00796b;
+    z-index: 3;
+    border-radius: 50%;
+    text-shadow: 1px 1px #00cfb7;
+}
+
+img {
+    padding: auto;
+    width: 50%;
+}
+.carouselSlick {
+    width: 60vw;
+    height: 50vh;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    display: inline-block;
+}
+
+.car {
+    text-align: center;
+}
+
+.modal-content {
+    border: .1vw solid black;
+}
+
+#modalFooter {
+    background: rgba(0, 0, 0, 0);
+}
+
+.slick-slide img{
+    display: unset;
+}
+
+#guest-name, #guest-amount{
+    width: 300px;
+}
+#guest-amount, .guest-amount{
+    display: none;
+}
+
+.btn {
+    font-family: 'Bad Script', cursive;
+    text-transform: none;
+}
+
+#guest-comment{
+    width: 300px;
+    height: 300px;
+    background-color: antiquewhite;
+    resize: none;
+}
+
+@media only screen and (max-width: 450px) {
+    img {
+        padding: auto;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .email-text, p {
+        font-size: medium;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .carouselSlick {
+        margin-left: 20vw;
+    }
+}
+
