@@ -83,7 +83,7 @@ $("#submit-form").on("click", function () {
         $("#error-msg").append($("<p>").html("Please send me an email or text if this is an error!"));
         return;
       }
-      location.reload();
+      $("#error-msg").append($("<p>").html("Your information has been sent!"));
     }).catch(function (err){
       console.log(err);
     });
